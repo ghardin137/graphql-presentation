@@ -1,0 +1,16 @@
+query RootQuery {
+  project(id: 2) {
+    name
+  }
+  projects {
+    id
+    name
+    members {
+      id
+      name
+      tickets {
+        message
+      }
+    }
+  }
+}
